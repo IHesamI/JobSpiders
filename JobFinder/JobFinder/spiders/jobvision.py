@@ -10,5 +10,5 @@ class Jobvision(scrapy.Spider):
     def  parse(self, response):
         Path(F'JOBVISION.html').write_bytes(response.body)
         self.log('Jobvision saved')
-        # return super().parse(response)
+
         
